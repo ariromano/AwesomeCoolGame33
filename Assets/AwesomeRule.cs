@@ -3,17 +3,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "AwesomeRule", menuName = "AwesomeGame/Rule", order = 1)]
-public class AwesomeRule: ScriptableObject
+public abstract class AwesomeRule: ScriptableObject
 {
     public Texture2D image;
-    public string name;
-    public RuleType type;
+    public string ruleName;
+    //public RuleType type;
+	public abstract void Trigger();
 }
-
+/*
 public enum RuleType{
     instant,
     environmental,
-    spawn
+    spawn,
+	character
 }
 
+*/

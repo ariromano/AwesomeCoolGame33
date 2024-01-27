@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f6374da638dd54ca6a0951609a0cf9be, type: 3}
-  m_Name: DestroyEverything
+  m_Script: {fileID: 11500000, guid: 2dce35106cd314592a6855ddd779f217, type: 3}
+  m_Name: SpawnBomb
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  name: Destroy Everything!
-  type: 0
+  image: {fileID: 2800000, guid: 60cf282f5d0de4ccd94f702393b44961, type: 3}
+  ruleName: Spawn Bomb
+  objectToSpawn: {fileID: 0}
