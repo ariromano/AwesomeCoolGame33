@@ -32,6 +32,7 @@ public class ConveyorController : MonoBehaviour
 		lastCardSpawnTime = Time.time;
 		if(currentSlot < maxCards - 1){
 			currentCards[currentSlot] = Instantiate(CardPreview, transform).GetComponent<ConveyorCard>();
+			currentCards[currentSlot].rule = AvailableRules[0];
 			currentSlot +=1;
 		} else {
 			Debug.Log("game over");

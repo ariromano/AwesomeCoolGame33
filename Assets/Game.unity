@@ -623,8 +623,8 @@ MonoBehaviour:
   CardPreview: {fileID: 8101532173717182618, guid: a43cabd4a7cf04dd496426b3aaacaee2, type: 3}
   currentCards: []
   maxCards: 10
-  cardSpawnCadence: 5
-  cardDistance: 0.5
+  cardSpawnCadence: 1
+  cardDistance: 2
 --- !u!4 &1284903239
 Transform:
   m_ObjectHideFlags: 0
@@ -634,7 +634,7 @@ Transform:
   m_GameObject: {fileID: 1284903237}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -8.7, y: -0.36964923, z: -3.88}
+  m_LocalPosition: {x: -9.78, y: 0, z: -5.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
