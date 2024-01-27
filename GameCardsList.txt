@@ -5,19 +5,20 @@ S - Small amount of time
 H - Half the total time for a given level
 
 Game Cards
-    Instant
-    * Replay- Re-write the last game played
+    Openings- When the Builder gets a new game, these cards can be played if no other cards have been played
+    * Replay- Copies the current layout of the game. The game starts immediately.
     * Randomize- Activate three random cards
-    * Time Stop- Time is frozen for all entites except for the player for the first S seconds
-    Environment
+    Instant- These instantly play on the Player's game
+    * Time Stop- Time is frozen for all entites
+    Environment- These modify the Builder's game environment
     * Moon Gravity- Game gravity is half
     * Slime- Dump green slime from the ceiling. The slime slows down all entities.
     * Lava Floor- The floor is lava. The player dies after prolonged contact.
     * Flooded- The game is underwater.
-    Spawn
+    Spawn- These spawn items or enemies into the Builder's game
     * Big Bomb- Player must finish the level in H seconds or lose a life
-    * Mirror player- Copies the player's movement and actions
-    * Springy shoes- The player continously jumps.
+    * Mirror player- Copies the Player's movement and actions
+    * Springy shoes- The Player continously jumps.
     * Goblin- Goblins run fast and hit like a feather.
     * Robot- Robots can shoot lasers far.
     * Wormhole- Creates an entry and exit portal.
