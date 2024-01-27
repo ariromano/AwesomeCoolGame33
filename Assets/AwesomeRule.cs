@@ -14,6 +14,7 @@ public class AwesomeRule: ScriptableObject
 public enum RuleType{
     instant,
     environmental,
-    spawn
+    spawn,
+	character
 }
 
