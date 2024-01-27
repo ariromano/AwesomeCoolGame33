@@ -28,14 +28,17 @@ public class ConveyorController : MonoBehaviour
 		}
 	}
 	void SpawnCard(){
-		Debug.Log("spawning new card");
 		lastCardSpawnTime = Time.time;
 		if(currentSlot < maxCards - 1){
 			currentCards[currentSlot] = Instantiate(CardPreview, transform).GetComponent<ConveyorCard>();
-			currentCards[currentSlot].rule = AvailableRules[0];
+			Random.InitState((int)(Time.time * 10.0f));
+			//pick random rule for the new card
+			int pickedRule = Random.Range(0, AvailableRules.Length);
+			Debug.Log("spawning new card: " + AvailableRules[pickedRule].name + " (rule #" + pickedRule.ToString() + ")");
+			currentCards[currentSlot].rule = AvailableRules[pickedRule];
 			currentSlot +=1;
 		} else {
-			Debug.Log("game over");
+			Debug.Log("conveyor is full");
 		}
 		repositionCards();
 	}
