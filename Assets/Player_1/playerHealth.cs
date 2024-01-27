@@ -9,7 +9,7 @@ public class playerHealth : MonoBehaviour
     public void takeDamage(float damageTaken){
         currentHealth-=damageTaken;
         if(currentHealth<=0){
-            playerDie;
+            playerDie();
         }
     }
 
