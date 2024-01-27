@@ -55,10 +55,11 @@ public class ConveyorController : MonoBehaviour
 
 		
 		}
-		
+		/*
 		if(Input.GetKeyDown(KeyCode.Space)){
 			SpawnCard();
 		}
+		*/
 		
 	}
 	void SpawnCard(){

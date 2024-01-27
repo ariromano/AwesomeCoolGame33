@@ -1,7 +1,9 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ConveyorCard : MonoBehaviour
 {
@@ -17,6 +19,8 @@ public class ConveyorCard : MonoBehaviour
 	public float moveSpeed = 0.5f;
 	public float spawnPosition = 8.0f;
 	public float destructionTime = 1.0f;
+	//text
+	public TextMeshProUGUI text;
 
     void Start()
     {
@@ -29,6 +33,10 @@ public class ConveyorCard : MonoBehaviour
 		Vector3 newPosition = new Vector3(spawnPosition, 0.0f, 0.0f);
 		transform.localPosition = newPosition;
 		animator = GetComponent<Animator>();
+		//hide the text. we can only see if when the card is selected.
+		text.gameObject.SetActive(false);
+		//set the text to the name of the rule the card is about
+		text.text = rule.ruleName;
     }
 
     // Update is called once per frame
@@ -45,11 +53,13 @@ public class ConveyorCard : MonoBehaviour
 		myRenderer.material.SetColor("_EmissionColor", emissiveSelected);
 		myRenderer.material.EnableKeyword("_EMISSION");
 		animator.SetBool("isSelected", true);
+		text.gameObject.SetActive(true);
 	}
 	public void unHighlight(){
 		myRenderer.material.SetColor("_EmissionColor", emissiveUnSelected);
 		myRenderer.material.EnableKeyword("_EMISSION");
 		animator.SetBool("isSelected", false);
+		text.gameObject.SetActive(false);
 
 	}
 	public void Play(){
