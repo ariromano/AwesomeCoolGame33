@@ -9,7 +9,7 @@ public class player_movement : MonoBehaviour
     private bool groundedPlayer;
     public float playerSpeed = 4.0f;
     private float jumpHeight = 2.0f;
-    private float gravityValue = -9.81f;
+    public float gravityValue = -9.81f;
 
     private void Start()
     {
