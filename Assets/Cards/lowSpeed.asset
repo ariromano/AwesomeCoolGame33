@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81208429c0f106f409eafd35d8d8ad11, type: 3}
   m_Name: lowSpeed
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: 22fcc2e8d334d4eccb094a5e284fdbd8, type: 3}
+  image: {fileID: 2800000, guid: e49e44ba9bab69e4094d65643c1c2c45, type: 3}
   ruleName: low speed
   setSpeed: 2

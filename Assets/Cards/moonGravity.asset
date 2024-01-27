@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85aeb52d22ede014bb60bdabc6275389, type: 3}
   m_Name: moonGravity
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: 2b738b090af3a4168bfea323cefa63f9, type: 3}
+  image: {fileID: 2800000, guid: 653ee434567b6934aaacd2b299c040e9, type: 3}
   ruleName: Moon Gravity
   setGravity: -2
