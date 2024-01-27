@@ -12,7 +12,7 @@ public class ConveyorController : MonoBehaviour
 	public int currentCardCount;
 	//rules
 	public int maxCards = 10;
-	public float cardSpawnCadence = 5.0f;
+	public float cardSpawnCadence = 3.0f;
 	//status
 	private float lastCardSpawnTime;
 	int currentSpawnSlot = 0;
@@ -32,7 +32,7 @@ public class ConveyorController : MonoBehaviour
 
 	void FixedUpdate(){
 		if(lastCardSpawnTime < Time.time - cardSpawnCadence){
-			//SpawnCard();
+			SpawnCard();
 		}
 
 	}
@@ -55,9 +55,11 @@ public class ConveyorController : MonoBehaviour
 
 		
 		}
+		/*
 		if(Input.GetKeyDown(KeyCode.Space)){
 			SpawnCard();
 		}
+		*/
 	}
 	void SpawnCard(){
 		lastCardSpawnTime = Time.time;
