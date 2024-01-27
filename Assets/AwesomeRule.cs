@@ -7,7 +7,7 @@ using UnityEngine;
 public class AwesomeRule: ScriptableObject
 {
     public Texture2D image;
-    public string name;
+    public string ruleName;
     public RuleType type;
 }
 

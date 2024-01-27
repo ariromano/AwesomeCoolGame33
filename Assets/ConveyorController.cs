@@ -34,7 +34,7 @@ public class ConveyorController : MonoBehaviour
 			Random.InitState((int)(Time.time * 10.0f));
 			//pick random rule for the new card
 			int pickedRule = Random.Range(0, AvailableRules.Length);
-			Debug.Log("spawning new card: " + AvailableRules[pickedRule].name + " (rule #" + pickedRule.ToString() + ")");
+			Debug.Log("spawning new card: " + AvailableRules[pickedRule].ruleName + " (rule #" + pickedRule.ToString() + ")");
 			currentCards[currentSlot].rule = AvailableRules[pickedRule];
 			currentSlot +=1;
 		} else {
