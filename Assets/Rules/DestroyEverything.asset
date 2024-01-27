@@ -13,4 +13,5 @@ MonoBehaviour:
   m_Name: DestroyEverything
   m_EditorClassIdentifier: 
   image: {fileID: 0}
-  name: 
+  name: Destroy Everything!
+  type: 0

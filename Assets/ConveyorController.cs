@@ -9,11 +9,32 @@ public class ConveyorController : MonoBehaviour
     public GameObject CardPreview;
 	public ConveyorCard[] currentCards;
 	//rules
-	public int maxCards;
+	public int maxCards = 10;
 	public float cardSpawnCadence = 5.0f;
-
+	//status
+	private float lastCardSpawnTime;
+	int currentSlot = 0;
+	//visuals
+	public float cardDistance = 0.5f;
 
 	void Start(){
 		currentCards = new ConveyorCard[maxCards];
+		lastCardSpawnTime = Time.time;
+	}
+
+	void FixedUpdate(){
+		if(lastCardSpawnTime < Time.time - cardSpawnCadence){
+			SpawnCard();
+		}
+	}
+	void SpawnCard(){
+		Debug.Log("spawning new card");
+		lastCardSpawnTime = Time.time;
+		if(currentSlot < maxCards - 1){
+			currentCards[currentSlot] = Instantiate(CardPreview, transform).GetComponent<ConveyorCard>();
+			currentSlot +=1;
+		} else {
+			Debug.Log("game over");
+		}
 	}
 }

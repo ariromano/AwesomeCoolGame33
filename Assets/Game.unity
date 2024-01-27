@@ -588,6 +588,58 @@ Transform:
   - {fileID: 1652712475}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1284903237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1284903239}
+  - component: {fileID: 1284903238}
+  m_Layer: 0
+  m_Name: Conveyor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1284903238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284903237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecf1fc7363f34ddb8b5a4d035ad2240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AvailableRules:
+  - {fileID: 11400000, guid: 30f6ac9a8b2ed457fa2b305239ecfd83, type: 2}
+  - {fileID: 11400000, guid: 857d85a1c6d9e42df83a5f1e182e7302, type: 2}
+  CardPreview: {fileID: 8101532173717182618, guid: a43cabd4a7cf04dd496426b3aaacaee2, type: 3}
+  currentCards: []
+  maxCards: 10
+  cardSpawnCadence: 5
+  cardDistance: 0.5
+--- !u!4 &1284903239
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1284903237}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.7, y: -0.36964923, z: -3.88}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1647505338
 GameObject:
   m_ObjectHideFlags: 0
@@ -598,7 +650,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1647505339}
   - component: {fileID: 1647505341}
-  - component: {fileID: 1647505340}
   m_Layer: 7
   m_Name: Player2Cam
   m_TagString: MainCamera
@@ -621,14 +672,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1230370580}
   m_LocalEulerAnglesHint: {x: 66.297, y: 0, z: 0}
---- !u!81 &1647505340
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1647505338}
-  m_Enabled: 1
 --- !u!20 &1647505341
 Camera:
   m_ObjectHideFlags: 0
@@ -997,6 +1040,52 @@ Transform:
   m_Children: []
   m_Father: {fileID: 79262081}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1987797829
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1987797831}
+  - component: {fileID: 1987797830}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1987797830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4aebc7e62f4c744e094a24a466d6cfca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameCadence: 0
+  availableRules: []
+--- !u!4 &1987797831
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987797829}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -2.2237551, y: -0.36964923, z: 0.8134247}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -1004,4 +1093,6 @@ SceneRoots:
   - {fileID: 705507995}
   - {fileID: 963194228}
   - {fileID: 79262081}
+  - {fileID: 1284903239}
   - {fileID: 1230370580}
+  - {fileID: 1987797831}
