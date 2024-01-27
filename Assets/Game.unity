@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -372,17 +372,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AvailableRules:
-  - {fileID: 11400000, guid: 30f6ac9a8b2ed457fa2b305239ecfd83, type: 2}
-  - {fileID: 11400000, guid: 857d85a1c6d9e42df83a5f1e182e7302, type: 2}
+  - {fileID: 11400000, guid: 5f655216373314ebe9a8eb94c28677b2, type: 2}
+  - {fileID: 11400000, guid: c028962fb800544449c01d904f2e7eb8, type: 2}
   CardPreview: {fileID: 8101532173717182618, guid: a43cabd4a7cf04dd496426b3aaacaee2, type: 3}
-  currentCards: []
+  cards: []
   currentCardCount: 0
   maxCards: 10
   cardSpawnCadence: 1
-  cardDistance: 2
+  cardDistance: 1.6
   leftKey: 276
   rightKey: 275
-  select: 273
+  selectKey: 273
   currentlySelectedIndex: 0
 --- !u!4 &1284903239
 Transform:
@@ -393,7 +393,7 @@ Transform:
   m_GameObject: {fileID: 1284903237}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.78, y: 0, z: -5.69}
+  m_LocalPosition: {x: 3.61, y: 0, z: -5.69}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

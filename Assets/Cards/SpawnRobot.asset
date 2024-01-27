@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dce35106cd314592a6855ddd779f217, type: 3}
   m_Name: SpawnRobot
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  ruleName: 
+  image: {fileID: 2800000, guid: 2b738b090af3a4168bfea323cefa63f9, type: 3}
+  ruleName: Spawn Robot
   objectToSpawn: {fileID: 0}

@@ -62,7 +62,7 @@ public class ConveyorController : MonoBehaviour
 	void SpawnCard(){
 		lastCardSpawnTime = Time.time;
 		if(currentSpawnSlot < maxCards - 1){
-			cards[currentSpawnSlot] = Instantiate(CardPreview, transform).GetComponent<ConveyorCard>();
+			cards[currentSpawnSlot] = Instantiate(CardPreview, transform, false).GetComponent<ConveyorCard>();
 			Random.InitState((int)(Time.time * 10.0f));
 			//pick random rule for the new card
 			int pickedRule = Random.Range(0, AvailableRules.Length);

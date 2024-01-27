@@ -121,3 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetPosition: 0
   rule: {fileID: 0}
+  emissiveSelected: {r: 0, g: 1, b: 0, a: 1}
+  emissiveUnSelected: {r: 0, g: 0, b: 0, a: 1}
+  moveSpeed: 3
+  spawnPosition: 8

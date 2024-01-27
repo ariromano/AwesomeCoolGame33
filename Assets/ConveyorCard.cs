@@ -12,6 +12,8 @@ public class ConveyorCard : MonoBehaviour
 	//visuals
 	public Color emissiveSelected = Color.green;
 	public Color emissiveUnSelected = Color.black;
+	public float moveSpeed = 0.5f;
+	public float spawnPosition = 8.0f;
 
     void Start()
     {
@@ -21,13 +23,17 @@ public class ConveyorCard : MonoBehaviour
 		} else {
 			Debug.LogError("a conveyor card has been spawned but no rule assigned");
 		}
+		Vector3 newPosition = new Vector3(spawnPosition, 0.0f, 0.0f);
+		transform.localPosition = newPosition;
     }
 
     // Update is called once per frame
     void Update()
     {
+		float currentPosition = transform.localPosition.x;
 		//move card to targetPosition
-		Vector3 newPosition = new Vector3(targetPosition, 0.0f, 0.0f);
+		float intermediatePosition = Mathf.MoveTowards(currentPosition, targetPosition, moveSpeed * Time.deltaTime);
+		Vector3 newPosition = new Vector3(intermediatePosition, 0.0f, 0.0f);
 		transform.localPosition = newPosition;
     }
 	public void highlight(){
@@ -53,4 +59,12 @@ public class ConveyorCard : MonoBehaviour
 		rule.Trigger();
 		Destroy(gameObject);
 	}
+/*
+	void OnDrawGizmos()
+    {
+        Gizmos.color = Color.yellow;
+		Vector3 visualizationVector = new Vector3(stopPosition, transform.position.y, transform.position.z);
+        Gizmos.DrawSphere(transform.position, 1);
+    }
+	*/
 }
