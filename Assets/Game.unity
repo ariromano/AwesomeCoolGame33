@@ -377,9 +377,9 @@ MonoBehaviour:
   CardPreview: {fileID: 8101532173717182618, guid: a43cabd4a7cf04dd496426b3aaacaee2, type: 3}
   cards: []
   currentCardCount: 0
-  maxCards: 12
+  maxCards: 10
   cardSpawnCadence: 3
-  cardDistance: 1.6
+  cardDistance: 1.8
   leftKey: 276
   rightKey: 275
   selectKey: 273

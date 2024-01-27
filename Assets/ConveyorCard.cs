@@ -8,16 +8,19 @@ public class ConveyorCard : MonoBehaviour
 	public float targetPosition; //where should the card be visually?
 	public AwesomeRule rule; //the rule associated with the card
     // Start is called before the first frame update
-	private Renderer myRenderer;
+	public Renderer myRenderer;
+	Animator animator;
+
 	//visuals
 	public Color emissiveSelected = Color.green;
 	public Color emissiveUnSelected = Color.black;
 	public float moveSpeed = 0.5f;
 	public float spawnPosition = 8.0f;
+	public float destructionTime = 1.0f;
 
     void Start()
     {
-		myRenderer = GetComponent<Renderer> ();
+		//myRenderer = GetComponent<Renderer> ();
 		if(rule){
 			myRenderer.material.SetTexture("_MainTex", rule.image);
 		} else {
@@ -25,6 +28,7 @@ public class ConveyorCard : MonoBehaviour
 		}
 		Vector3 newPosition = new Vector3(spawnPosition, 0.0f, 0.0f);
 		transform.localPosition = newPosition;
+		animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -37,27 +41,22 @@ public class ConveyorCard : MonoBehaviour
 		transform.localPosition = newPosition;
     }
 	public void highlight(){
-		//Debug.Log("highlighting card: " + rule.name);
-		/*
-		Debug.Log("highlighting card: " + rule.name);
-		String[] properties = myRenderer.material.GetPropertyNames(MaterialPropertyType.Vector);
-		foreach(string s in properties){
-			Debug.Log("property: " + s);
-		}
-		*/
+
 		myRenderer.material.SetColor("_EmissionColor", emissiveSelected);
 		myRenderer.material.EnableKeyword("_EMISSION");
-
+		animator.SetBool("isSelected", true);
 	}
 	public void unHighlight(){
 		myRenderer.material.SetColor("_EmissionColor", emissiveUnSelected);
 		myRenderer.material.EnableKeyword("_EMISSION");
+		animator.SetBool("isSelected", false);
 
 	}
 	public void Play(){
 		//play this card
 		rule.Trigger();
-		Destroy(gameObject);
+		animator.SetBool("isPlayed", true);
+		Destroy(gameObject, destructionTime);
 	}
 /*
 	void OnDrawGizmos()
