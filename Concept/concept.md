@@ -1,0 +1,5 @@
+- screen
+    - left player area
+    - right player next game preview
+    - countdown timer
+    - conveyor that brins in new rules
