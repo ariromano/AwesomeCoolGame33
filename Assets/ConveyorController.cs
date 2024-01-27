@@ -36,5 +36,15 @@ public class ConveyorController : MonoBehaviour
 		} else {
 			Debug.Log("game over");
 		}
+		repositionCards();
+	}
+	void repositionCards(){
+		int i = 0;
+		while(i < maxCards-1){
+			if(currentCards[i]){
+				currentCards[i].targetPosition = i * cardDistance;
+			}
+			i++;
+		}
 	}
 }
