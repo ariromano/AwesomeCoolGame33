@@ -1,0 +1,24 @@
+GAME CARD RULES
+
+LEGEND
+S - Small amount of time
+H - Half the total time for a given level
+
+Game Cards
+    Instant
+    * Replay- Re-write the last game played
+    * Randomize- Activate three random cards
+    * Time Stop- Time is frozen for all entites except for the player for the first S seconds
+    Environment
+    * Moon Gravity- Game gravity is half
+    * Slime- Dump green slime from the ceiling. The slime slows down all entities.
+    * Lava Floor- The floor is lava. The player dies after prolonged contact.
+    * Flooded- The game is underwater.
+    Spawn
+    * Big Bomb- Player must finish the level in H seconds or lose a life
+    * Mirror player- Copies the player's movement and actions
+    * Springy shoes- The player continously jumps.
+    * Goblin- Goblins run fast and hit like a feather.
+    * Robot- Robots can shoot lasers far.
+    * Wormhole- Creates an entry and exit portal.
+    * Missile- Destroys a part of the level.
