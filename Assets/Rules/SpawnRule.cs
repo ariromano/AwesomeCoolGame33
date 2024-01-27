@@ -10,6 +10,8 @@ public class SpawnRule : AwesomeRule
 
 	public override void Trigger()
 	{
-		Instantiate(objectToSpawn);
+		if(objectToSpawn){
+			Instantiate(objectToSpawn);
+		}
 	}
 }
