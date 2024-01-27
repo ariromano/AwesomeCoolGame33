@@ -31,7 +31,7 @@ public class ConveyorCard : MonoBehaviour
 		transform.localPosition = newPosition;
     }
 	public void highlight(){
-		Debug.Log("highlighting card: " + rule.name);
+		//Debug.Log("highlighting card: " + rule.name);
 		/*
 		Debug.Log("highlighting card: " + rule.name);
 		String[] properties = myRenderer.material.GetPropertyNames(MaterialPropertyType.Vector);
@@ -47,5 +47,10 @@ public class ConveyorCard : MonoBehaviour
 		myRenderer.material.SetColor("_EmissionColor", emissiveUnSelected);
 		myRenderer.material.EnableKeyword("_EMISSION");
 
+	}
+	public void Play(){
+		//play this card
+		rule.Trigger();
+		Destroy(gameObject);
 	}
 }
