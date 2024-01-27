@@ -56,6 +56,9 @@ public class ConveyorCard : MonoBehaviour
 		//play this card
 		rule.Trigger();
 		animator.SetBool("isPlayed", true);
+		myRenderer.material.SetColor("_EmissionColor", emissiveUnSelected);
+		myRenderer.material.EnableKeyword("_EMISSION");
+		targetPosition = 8.0f;
 		Destroy(gameObject, destructionTime);
 	}
 /*

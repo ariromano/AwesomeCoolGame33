@@ -159,6 +159,7 @@ MonoBehaviour:
   emissiveUnSelected: {r: 0, g: 0, b: 0, a: 1}
   moveSpeed: 8
   spawnPosition: 18
+  destructionTime: 1.4
 --- !u!95 &7230172244646029221
 Animator:
   serializedVersion: 5
