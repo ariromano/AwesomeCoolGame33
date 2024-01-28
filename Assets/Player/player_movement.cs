@@ -11,6 +11,8 @@ public class player_movement : MonoBehaviour
     private float jumpHeight = 2.0f;
     public float gravityValue = -9.81f;
 
+	public bool isInverted = false;
+
     private void Start()
     {
         controller = gameObject.GetComponent<CharacterController>();
@@ -20,6 +22,10 @@ public class player_movement : MonoBehaviour
     {
         
         Vector3 move = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+		if(isInverted){
+			move = -move;
+		}
+
         controller.Move(move * Time.deltaTime * playerSpeed);
 
         groundedPlayer = controller.isGrounded;
