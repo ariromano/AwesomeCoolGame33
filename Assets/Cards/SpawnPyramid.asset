@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dce35106cd314592a6855ddd779f217, type: 3}
+  m_Name: SpawnPyramid
+  m_EditorClassIdentifier: 
+  image: {fileID: 2800000, guid: 2b738b090af3a4168bfea323cefa63f9, type: 3}
+  ruleName: spawnPyramid
+  objectToSpawn: {fileID: 484725978333040120, guid: 301481a65a30fb841b9aa35f26c71767, type: 3}
