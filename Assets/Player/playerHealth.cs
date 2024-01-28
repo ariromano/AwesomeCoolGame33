@@ -31,7 +31,9 @@ public class playerHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		hbc.barFill = currentHealth/maxHealth;
+		if(hbc){
+			hbc.barFill = currentHealth/maxHealth;
+		}
     }
 
 }
