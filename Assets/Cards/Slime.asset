@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2dce35106cd314592a6855ddd779f217, type: 3}
+  m_Name: Slime
+  m_EditorClassIdentifier: 
+  image: {fileID: 2800000, guid: 45bbed0ff09c08b4d8d0f5f5a8f22baf, type: 3}
+  ruleName: Slime!
+  objectToSpawn: {fileID: 4182303326398368655, guid: a1d45cc6291484a3b8b413aedabfa998, type: 3}
+  spawnAreaSize: 6
+  spawnHeight: 0
