@@ -11,9 +11,16 @@ public class SpeedRule : AwesomeRule
 
 	public override void Trigger()
 	{
-		player_movement movement = GameObject.Find("player").GetComponent<player_movement>();
-		if(movement){
-			movement.playerSpeed=setSpeed;
+		//player_movement movement = GameObject.Find("player").GetComponent<player_movement>();
+		
+		player_movement[] playersFound;
+		playersFound = FindObjectsByType<player_movement>(FindObjectsSortMode.None);
+
+		int pickedPlayer = Random.Range(0,playersFound.Length-1);
+		//playertransform = playersFound[pickedPlayer].transform;
+
+		if(playersFound[pickedPlayer]){
+			playersFound[pickedPlayer].playerSpeed = setSpeed;
 		}
 
 	}
