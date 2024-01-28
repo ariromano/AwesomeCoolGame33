@@ -7,6 +7,7 @@ public class playerHealth : MonoBehaviour
     public float currentHealth = 1;
 
     public void takeDamage(float damageTaken){
+		Debug.Log("ouch");
         currentHealth-=damageTaken;
         if(currentHealth<=0){
             playerDie();

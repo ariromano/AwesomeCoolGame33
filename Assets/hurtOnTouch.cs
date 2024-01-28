@@ -9,14 +9,15 @@ public class hurtOnTouch : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Hello World");
+       //Debug.Log("Hello World");
     }
     public float atkDmg;
 
-    private void OnCollisionEnter(Collision touch){
-       playerHealth health = GameObject.Find("player").GetComponent<playerHealth>(); 
-       if(touch.gameObject.name==("player")){
-           health.takeDamage(atkDmg);
+    private void OnTriggerStay(Collider other){
+		Debug.Log("damage thing detected");
+
+       if(other.gameObject.GetComponent<playerHealth>()){
+           other.gameObject.GetComponent<playerHealth>().takeDamage(atkDmg);
          // Debug.Log("Touch player :)");
          // Destroy(touch.gameObject);
         //
