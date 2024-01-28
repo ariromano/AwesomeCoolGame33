@@ -12,7 +12,9 @@ public class SpeedRule : AwesomeRule
 	public override void Trigger()
 	{
 		player_movement movement = GameObject.Find("player").GetComponent<player_movement>();
-		movement.playerSpeed=setSpeed;
+		if(movement){
+			movement.playerSpeed=setSpeed;
+		}
 
 	}
 }
