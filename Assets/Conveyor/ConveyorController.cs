@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -28,6 +29,7 @@ public class ConveyorController : MonoBehaviour
 	void Start(){
 		cards = new ConveyorCard[maxCards];
 		lastCardSpawnTime = Time.time;
+		UnityEngine.Random.InitState((int)DateTime.Now.Ticks);
 	}
 
 	void FixedUpdate(){
@@ -66,9 +68,9 @@ public class ConveyorController : MonoBehaviour
 		lastCardSpawnTime = Time.time;
 		if(currentSpawnSlot < maxCards - 1){
 			cards[currentSpawnSlot] = Instantiate(CardPreview, transform, false).GetComponent<ConveyorCard>();
-			Random.InitState((int)(Time.time * 10.0f));
+			
 			//pick random rule for the new card
-			int pickedRule = Random.Range(0, AvailableRules.Length);
+			int pickedRule = UnityEngine.Random.Range(0, AvailableRules.Length);
 			//Debug.Log("spawning new card: " + AvailableRules[pickedRule].ruleName + " (rule #" + pickedRule.ToString() + ")");
 			cards[currentSpawnSlot].rule = AvailableRules[pickedRule];
 			currentSpawnSlot += 1;
