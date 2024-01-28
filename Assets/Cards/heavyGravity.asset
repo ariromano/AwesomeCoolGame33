@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85aeb52d22ede014bb60bdabc6275389, type: 3}
   m_Name: heavyGravity
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: 45bbed0ff09c08b4d8d0f5f5a8f22baf, type: 3}
+  image: {fileID: 2800000, guid: f38cb2fa375bcfe4fb212626b5f39028, type: 3}
   ruleName: Heavy Gravity
   setGravity: -30
