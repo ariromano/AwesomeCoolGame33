@@ -15,3 +15,6 @@ MonoBehaviour:
   image: {fileID: 2800000, guid: d71b10b5ea63e2443bb4e1584fdf90b9, type: 3}
   ruleName: Spawn Goblin
   objectToSpawn: {fileID: 8868122521417024611, guid: 5a12acee33d38b34ca9f356a9d577b0c, type: 3}
+  spawnAreaSize: 3
+  randomizeRotation: 1
+  spawnHeight: 3

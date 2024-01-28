@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dce35106cd314592a6855ddd779f217, type: 3}
   m_Name: SpawnPyramid
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: 2b738b090af3a4168bfea323cefa63f9, type: 3}
+  image: {fileID: 2800000, guid: e49e44ba9bab69e4094d65643c1c2c45, type: 3}
   ruleName: spawnPyramid
   objectToSpawn: {fileID: 8053777368091157674, guid: ecc357e058b5141bb9e9d34fe9623c94, type: 3}
   spawnAreaSize: 10

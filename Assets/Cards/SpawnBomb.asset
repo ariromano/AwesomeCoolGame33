@@ -16,4 +16,5 @@ MonoBehaviour:
   ruleName: Spawn Bomb
   objectToSpawn: {fileID: 453312985495297212, guid: 07bd17b4a8f3049e08cff89fd0be4452, type: 3}
   spawnAreaSize: 5
+  randomizeRotation: 1
   spawnHeight: 3

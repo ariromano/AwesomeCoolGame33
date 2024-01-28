@@ -8,6 +8,7 @@ public class SpawnRule : AwesomeRule
 {
 	public GameObject objectToSpawn;
 	public float spawnAreaSize = 3.0f;
+	public bool randomizeRotation = false;
 	public float spawnHeight = 3.0f;
 
 
@@ -18,7 +19,10 @@ public class SpawnRule : AwesomeRule
 			float randY = Random.Range(-spawnAreaSize, spawnAreaSize);
 
 			Vector3 spawnPos = new Vector3(randX,spawnHeight,randY);
-			Instantiate(objectToSpawn, spawnPos, Quaternion.identity);
+			Quaternion rot = Quaternion.identity;
+			if(randomizeRotation){ rot = Random.rotation ;}
+			Instantiate(objectToSpawn, spawnPos, rot);
+
 		}
 	}
 }

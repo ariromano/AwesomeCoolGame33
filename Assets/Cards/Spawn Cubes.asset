@@ -16,4 +16,5 @@ MonoBehaviour:
   ruleName: spawn a bunch of cubes
   objectToSpawn: {fileID: 7002195690600965054, guid: 708ed0234211c4090884cd4b8cd909fb, type: 3}
   spawnAreaSize: 7
+  randomizeRotation: 1
   spawnHeight: 5
