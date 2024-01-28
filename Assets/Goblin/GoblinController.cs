@@ -15,7 +15,12 @@ public class GoblinCrontroller : MonoBehaviour
 
     private void Start()
     {
-        playertransform = GameObject.Find("player").transform;
+		player_movement[] playersFound;
+		playersFound = FindObjectsByType<player_movement>(FindObjectsSortMode.None);
+
+		int pickedPlayer = Random.Range(0,playersFound.Length-1);
+		playertransform = playersFound[pickedPlayer].transform;
+
 
         controller = gameObject.GetComponent<CharacterController>();
     }
