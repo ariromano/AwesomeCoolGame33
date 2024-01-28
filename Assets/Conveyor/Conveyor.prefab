@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8199950895451693495
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1844517996578479435}
+  - component: {fileID: 5630192640979153098}
+  m_Layer: 0
+  m_Name: Conveyor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1844517996578479435
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8199950895451693495}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8, y: 0, z: -4.61}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5630192640979153098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8199950895451693495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecf1fc7363f34ddb8b5a4d035ad2240, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AvailableRules:
+  - {fileID: 11400000, guid: 5f655216373314ebe9a8eb94c28677b2, type: 2}
+  - {fileID: 11400000, guid: c028962fb800544449c01d904f2e7eb8, type: 2}
+  - {fileID: 11400000, guid: 72f900971ab783949a1c762ffdb27cbd, type: 2}
+  - {fileID: 11400000, guid: 589b932bb166e17419c956554e79d0cf, type: 2}
+  - {fileID: 11400000, guid: ee9a5dc3b8ba2d14fbe2dfe83582cd02, type: 2}
+  - {fileID: 11400000, guid: da3bb97e8e2907444960cc1b7b5e8eff, type: 2}
+  CardPreview: {fileID: 8101532173717182618, guid: a43cabd4a7cf04dd496426b3aaacaee2, type: 3}
+  cards: []
+  currentCardCount: 0
+  maxCards: 10
+  cardSpawnCadence: 3
+  cardDistance: 1.8
+  leftKey: 276
+  rightKey: 275
+  selectKey: 273
+  currentlySelectedIndex: 0
