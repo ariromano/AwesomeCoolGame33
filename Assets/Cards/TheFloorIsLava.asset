@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2dce35106cd314592a6855ddd779f217, type: 3}
   m_Name: TheFloorIsLava
   m_EditorClassIdentifier: 
-  image: {fileID: 0}
-  ruleName: 
-  objectToSpawn: {fileID: 0}
+  image: {fileID: 2800000, guid: 0b2e92caeeea2da4ba22fcae7550453d, type: 3}
+  ruleName: The Floor is Lava
+  objectToSpawn: {fileID: 4182303326398368655, guid: 1ea7d166985ec9a4dbd839de8aad3fa2, type: 3}

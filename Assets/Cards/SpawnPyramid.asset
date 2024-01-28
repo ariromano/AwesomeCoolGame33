@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   image: {fileID: 2800000, guid: 2b738b090af3a4168bfea323cefa63f9, type: 3}
   ruleName: spawnPyramid
-  objectToSpawn: {fileID: 484725978333040120, guid: 301481a65a30fb841b9aa35f26c71767, type: 3}
+  objectToSpawn: {fileID: 8053777368091157674, guid: ecc357e058b5141bb9e9d34fe9623c94, type: 3}
