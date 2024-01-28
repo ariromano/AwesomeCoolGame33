@@ -5,6 +5,10 @@ using UnityEngine;
 public class playerHealth : MonoBehaviour
 {
     public float currentHealth = 1;
+	public float maxHealth = 10;
+
+	public HealthBarController hbc;
+
 
     public void takeDamage(float damageTaken){
 		Debug.Log("ouch");
@@ -12,6 +16,7 @@ public class playerHealth : MonoBehaviour
         if(currentHealth<=0){
             playerDie();
         }
+		hbc.barFill = currentHealth/maxHealth;
     }
 
     public void playerDie(){
@@ -20,12 +25,13 @@ public class playerHealth : MonoBehaviour
 
     void Start()
     {
+		currentHealth = maxHealth;
     }
 
     // Update is called once per frame
     void Update()
     {
-
+		hbc.barFill = currentHealth/maxHealth;
     }
 
 }
