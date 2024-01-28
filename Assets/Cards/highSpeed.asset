@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81208429c0f106f409eafd35d8d8ad11, type: 3}
   m_Name: highSpeed
   m_EditorClassIdentifier: 
-  image: {fileID: 2800000, guid: 60cf282f5d0de4ccd94f702393b44961, type: 3}
+  image: {fileID: 2800000, guid: 42f693c4f3cfdab4f97924aadf816fae, type: 3}
   ruleName: high speed
   setSpeed: 10
